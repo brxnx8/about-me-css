@@ -10,6 +10,8 @@ p{
     text-align: center;
 }
 
+
+
 /* Header */
 
 header{
@@ -44,4 +46,36 @@ header > ul{
     text-decoration: underline;
     color: rgb(78, 80, 80);
 
+}
+
+
+
+
+/* Main (text and image) */
+
+main{
+    background-color: white;
+
+}
+.SectionText{
+    background-color: rgb(180, 178, 178);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 385px;
+}
+.divText{
+    width: 500px;
+    padding: 10px;
+}
+.divImg{
+    padding: 10px;
+}
+.imgMain{
+    border-radius: 50%;
+    margin: auto;
+    width: 250px;
+    padding: 0px;
+    box-shadow: 1px 1px 6px black;
 }
