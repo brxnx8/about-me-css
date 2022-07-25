@@ -153,9 +153,8 @@ h1{
     .menu li{
         width: 100%;
     }
-    .menu li a: hover{
+    .menu li a:hover{
         padding: 30px;
-        font-size: 24px;
         box-shadow: 0 1px 0 rgba(255, 255, 255, .1) inset;
     }
 }
