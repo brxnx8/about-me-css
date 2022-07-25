@@ -9,3 +9,39 @@ body{
 p{
     text-align: center;
 }
+
+/* Header */
+
+header{
+    background-color: rgb(48, 48, 48);
+    color: gray;
+    display: flex;
+    padding: 15px;
+    justify-content:space-between;
+}
+h1{
+    font-weight: 500;
+    font-size: 140%;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    
+}
+header > ul{
+    align-self: end;
+    display: flex;
+}
+.LinkHeader{
+    text-decoration: none;
+    color: gray;
+}
+.TextAbout{
+    text-align: justify;
+}
+/* Primeiro Hover */
+.liHeader:hover .HoverHeader{
+    text-decoration: underline;
+    color: rgb(78, 80, 80);
+
+}
