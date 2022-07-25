@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/balao.ico" type="image/x-icon">
+    <title>pagina de contato</title>
+</head>
+<body>
+<header> <!-- Cabeçalho com titulo --> 
+    <h1>PAGINA DE CONTATO - BRUNO OLIVEIRA</h1>
+</header>
+<main>
+    <section>
+        <table> <!-- Tabela contendo minhas informaçoes --> 
+            <tr>
+                <td><strong>Nome:</strong></td>
+                <td>Bruno Gabriel Santos de Oliveira</td>
+            </tr>
+            <tr>
+                <td><strong>Telefone:</strong></td>
+                <td>(21)97186-1567</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>brunogso@id.uff.br</td>
+            </tr>
+        </table>
+        <br>
+        <form action="mailto:brunogso@id.uff.br" method="post" enctype="text/plain"> <!-- Form para mandar email --> 
+            <input type="text" placeholder="Digite seu nome" required>
+            <br>
+            <input type="email" placeholder="Digite seu email" required>
+            <br>
+            <textarea name="mensagem" id="" cols="30" rows="10" required placeholder="Digite a mensagem de texto"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+        <br> <!-- link para minha pagina --> 
+        <a href="bruno.html" target="_self" rel="prev">Acesse minha pagina</a>
+    </section>
+    <div> <!-- Video e controle da musica de fundo --> 
+        <h3>Confira tambem este video</h3>
+        <video src="videos/videoplayback.mp4" controls width="300"></video>
+        <br>
+        <p> <mark>Musica ambiente:</mark></p>
+        <audio src="audio/audio.mp3" controls autoplay></audio>
+        
+    </div>
+</main>
+<br>
+<footer> <!-- rodape --> 
+    <ul>
+        <li><a href="https://gitlab.com/brunogabriel2608" target="_blank" rel="external">Pagina no gitlab</a></li>
+        <li><a href="principal.html" target="_self" rel="prev">Voltar para Home</a></li>
+    </ul>
+</footer>    
+</body>
+</html>
