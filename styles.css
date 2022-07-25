@@ -12,31 +12,44 @@ p{
 
 
 
+
+
 /* Header */
 
 header{
     background-color: rgb(48, 48, 48);
     color: gray;
     display: flex;
-    padding: 15px;
+    padding: 0 25px;
     justify-content:space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
 }
 h1{
     font-weight: 500;
     font-size: 140%;
 }
-li{
-    list-style: none;
-    padding: 10px;
-    
-}
-header > ul{
-    align-self: end;
+.navigation{
     display: flex;
+    justify-content: space-between;   
+    align-items: center;
 }
-.LinkHeader{
+.menu{
+    display: flex;
+    z-index: 1;
+    transition: 0.5s;
+}
+.liHeader{
+    list-style: none;
+}
+.menu li a {
     text-decoration: none;
     color: gray;
+    display: block;
+    padding: 40px 25px;
+    line-height: 1;
+    transition: 0.3s;
 }
 .TextAbout{
     text-align: justify;
@@ -47,6 +60,106 @@ header > ul{
     color: rgb(78, 80, 80);
 
 }
+
+
+
+
+
+/* menu hamburger */
+.menu li a:hover {
+    box-shadow: 0 -5px 0px white inset,
+    500px 0 0 rgba(255, 255, 255, .03) inset;
+}
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+
+}
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+.hamburger:before{
+    top: -10px;
+    width: 20px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 25px;
+}
+.checkmenu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.hamburger,
+.checkmenu{
+    display: none;
+}
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+.navigation input:checked ~ .hamburger:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .hamburger:after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .menu{
+    right: 0;
+    box-shadow: -20px 0 40px rgba(0, 0, 0, .3);
+}
+
+@media screen and (max-width: 992px){
+    .hamburger,
+    .checkmenu{
+    display: block;
+    }
+    header{
+        padding: 10px 20px;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background-color: rgb(48, 48, 48);
+        width: 200px;
+        height: 100%;
+        padding-top: 65px;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a: hover{
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .1) inset;
+    }
+}
+
 
 
 
@@ -79,6 +192,8 @@ main{
     padding: 0px;
     box-shadow: 1px 1px 6px black;
 }
+
+
 
 
 
@@ -151,6 +266,8 @@ main{
     opacity:100;
 
 }
+
+
 
 
 
