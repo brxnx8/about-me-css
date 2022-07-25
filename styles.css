@@ -151,3 +151,57 @@ main{
     opacity:100;
 
 }
+
+
+
+/* footer */
+
+footer{
+    background-color: rgb(48, 48, 48);
+    position: relative;
+    height: auto;
+    
+} 
+footer > section{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.DivIcones{
+    display: flex;
+    text-align: end;
+    width: 500px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ .Icones{
+    width: 35px;
+    padding-right: 30px;
+    padding-bottom: 22px;
+} 
+.DivContato{
+    display: flex;
+    text-align: end;
+    width: 500px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.LinkFooter{
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    background-color: rgb(189, 188, 188);
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 5px;
+    width: auto;
+}
+/* Terceiro Hover */
+.LinkFooter:hover .HoverFooter{
+    text-decoration: underline;
+    color: rgb(97, 96, 96);
+
+}
