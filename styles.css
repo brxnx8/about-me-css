@@ -79,3 +79,75 @@ main{
     padding: 0px;
     box-shadow: 1px 1px 6px black;
 }
+
+
+
+/* Main (Listas) */
+
+.SectionList{
+    background-color: rgb(187, 187, 187);
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.DivItem{
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    height: 150px;
+    padding: auto;
+    margin: 8px;
+    position: relative;
+    box-shadow: 1px 1px 3px black;
+
+
+}
+.divList{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    padding: 50px;
+    
+}
+.imglist{
+    width: 70px;
+    position: absolute;
+    left: 5px;
+    bottom: 3em;
+
+}
+.Subtitulo{
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.Legend{
+    opacity: 0;
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    box-sizing: border-box;
+}
+.NumberOrdinal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    left: 0;
+    border-radius: 10px 0px 3px 0px;
+    width: 20px;
+    height: 23px;
+    box-shadow: 1px 1px 1px black;
+}
+/* Segundo Hover */
+.DivItem:hover figcaption{
+    opacity:100;
+
+}
